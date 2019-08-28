@@ -26,6 +26,10 @@ def slice_the_array()
 end
 
 # converting ranges to arrays is easy peasy
+"""
+.. -> Creates a range from start point to end point inclusive. -> 1..10 Creates a range from 1 to 10 inclusive.
+... -> Creates a range from start point to end point exclusive. -> 1...10 Creates a range from 1 to 9.
+"""
 def convert_ranges_to_arrays()
     print (1..10).to_a
     print "\n"
@@ -78,3 +82,18 @@ push_pop()
 shared_Array = [4785, "random", 859, "chilling", 9]
 # array_iteration(shared_Array)
 iterate_with_each(shared_Array)
+
+# Ruby Hashes
+"""
+A literal Ruby Hash is created by placing a list of key/value pairs between braces,
+with either a comma or the sequence => between the key and the value. A trailing comma is ignored.
+"""
+
+def hashes_are_fun()
+    hsh = colors = { "red" => 0xf00, "green" => 0x0f0, "blue" => 0x00f }
+    hsh.each do |key, value|
+        print key, " is ", value, "\n"
+    end
+end
+
+hashes_are_fun()
