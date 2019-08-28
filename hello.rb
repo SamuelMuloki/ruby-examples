@@ -1,6 +1,7 @@
-your_name = "Samuel"
+first_name = "Samuel"
+last_name = "Muloki"
 
-puts "Hello #{your_name}"
+puts "Hello #{first_name} #{last_name}"
 puts "Its now #{ Time.now }"
 
 # Each line shows a method being called as an argument to puts.
